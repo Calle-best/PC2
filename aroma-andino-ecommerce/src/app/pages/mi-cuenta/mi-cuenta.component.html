@@ -1,0 +1,18 @@
+<section class="container py-4">
+  <h2>Mi cuenta</h2>
+
+  <div *ngIf="usuario; else sinSesion" class="card shadow-sm mt-3">
+    <div class="card-body">
+      <h5>{{ usuario.nombre }}</h5>
+      <p class="mb-1"><strong>Usuario:</strong> {{ usuario.usuario }}</p>
+      <p class="mb-3"><strong>Último ingreso:</strong> {{ usuario.fechaIngreso | date: 'dd/MM/yyyy HH:mm' }}</p>
+      <a class="btn btn-andino" routerLink="/dashboard">Ir al Dashboard</a>
+    </div>
+  </div>
+
+  <ng-template #sinSesion>
+    <div class="alert alert-info mt-3">
+      Aún no has iniciado sesión. <a routerLink="/login">Inicia sesión aquí</a>.
+    </div>
+  </ng-template>
+</section>

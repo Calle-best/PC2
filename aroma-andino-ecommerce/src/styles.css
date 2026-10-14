@@ -1,0 +1,18 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+:root {
+  --coffee-dark: #241712;
+  --coffee-mid: #4a3222;
+  --cream: #f3e9dc;
+  --terracotta: #b5502e;
+  --gold: #c98a2c;
+}
+
+body { background: var(--cream); color: var(--coffee-dark); }
+
+h1, h2, h3, h4, h5 { font-family: Georgia, 'Times New Roman', serif; }
+
+.btn-andino { background: var(--terracotta); color: var(--cream); border: none; }
+.btn-andino:hover { background: #9c4326; color: var(--cream); }
+.text-terracotta { color: var(--terracotta); }

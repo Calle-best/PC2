@@ -1,0 +1,3 @@
+.footer-andino { background: var(--coffee-dark); color: #eadfcf; }
+.footer-andino a { color: #eadfcf; text-decoration: none; }
+.footer-andino a:hover { color: var(--gold); }

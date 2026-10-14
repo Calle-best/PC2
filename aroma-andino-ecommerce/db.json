@@ -1,0 +1,124 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Café Americano Andino",
+      "imagen": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=70",
+      "categoria": "Bebidas",
+      "precio": 8.0,
+      "stock": 40,
+      "oferta": false,
+      "descripcion": "Grano peruano de altura, tostado medio."
+    },
+    {
+      "id": 2,
+      "nombre": "Cappuccino Andino",
+      "imagen": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=600&q=70",
+      "categoria": "Bebidas",
+      "precio": 11.5,
+      "stock": 35,
+      "oferta": true,
+      "descripcion": "Espresso, leche vaporizada y toque de canela."
+    },
+    {
+      "id": 3,
+      "nombre": "Café de Especialidad 250g",
+      "imagen": "https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=600&q=70",
+      "categoria": "Bebidas",
+      "precio": 32.0,
+      "stock": 18,
+      "oferta": false,
+      "descripcion": "Grano entero de Cusco, notas a chocolate."
+    },
+    {
+      "id": 4,
+      "nombre": "Mate de Muña",
+      "imagen": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=70",
+      "categoria": "Infusiones",
+      "precio": 7.0,
+      "stock": 50,
+      "oferta": false,
+      "descripcion": "Infusión andina digestiva y aromática."
+    },
+    {
+      "id": 5,
+      "nombre": "Anís del Cusco",
+      "imagen": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=600&q=70",
+      "categoria": "Infusiones",
+      "precio": 7.0,
+      "stock": 45,
+      "oferta": true,
+      "descripcion": "Infusión herbal suave para tardes frías."
+    },
+    {
+      "id": 6,
+      "nombre": "Caja de Infusiones Andinas",
+      "imagen": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=600&q=70",
+      "categoria": "Infusiones",
+      "precio": 24.9,
+      "stock": 12,
+      "oferta": true,
+      "descripcion": "Muña, manzanilla, hierba luisa y anís."
+    },
+    {
+      "id": 7,
+      "nombre": "Sándwich de Pan Serrano",
+      "imagen": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=70",
+      "categoria": "Acompañamientos",
+      "precio": 12.0,
+      "stock": 20,
+      "oferta": false,
+      "descripcion": "Pan artesanal con jamón del país y queso andino."
+    },
+    {
+      "id": 8,
+      "nombre": "Queque de Kiwicha",
+      "imagen": "https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?auto=format&fit=crop&w=600&q=70",
+      "categoria": "Acompañamientos",
+      "precio": 9.0,
+      "stock": 5,
+      "oferta": true,
+      "descripcion": "Postre casero con kiwicha y miel de abeja."
+    },
+    {
+      "id": 9,
+      "nombre": "Cafetera Prensa Francesa",
+      "imagen": "https://images.unsplash.com/photo-1587080413959-06b859fb107d?auto=format&fit=crop&w=600&q=70",
+      "categoria": "Equipos",
+      "precio": 89.0,
+      "stock": 8,
+      "oferta": false,
+      "descripcion": "Prensa francesa de vidrio, 600 ml."
+    },
+    {
+      "id": 10,
+      "nombre": "Taza Artesanal Andina",
+      "imagen": "https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&q=70",
+      "categoria": "Equipos",
+      "precio": 29.0,
+      "stock": 25,
+      "oferta": true,
+      "descripcion": "Cerámica pintada a mano con motivos andinos."
+    },
+    {
+      "id": 11,
+      "nombre": "Molinillo Manual",
+      "imagen": "https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=600&q=70",
+      "categoria": "Equipos",
+      "precio": 65.0,
+      "stock": 3,
+      "oferta": false,
+      "descripcion": "Molinillo de granos de acero inoxidable."
+    },
+    {
+      "id": 12,
+      "nombre": "Termo Aroma Andino",
+      "imagen": "https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&fit=crop&w=600&q=70",
+      "categoria": "Equipos",
+      "precio": 54.0,
+      "stock": 15,
+      "oferta": false,
+      "descripcion": "Mantiene tu café caliente por 8 horas."
+    }
+  ]
+}

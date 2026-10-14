@@ -1,0 +1,24 @@
+<footer class="footer-andino mt-5 pt-4 pb-3">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-5">
+        <h5>{{ marca | uppercase }}</h5>
+        <p class="small mb-0">El sabor de los Andes en cada taza. Café peruano, infusiones andinas y acompañamientos artesanales.</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <h6>Navegación</h6>
+        <ul class="list-unstyled small">
+          <li><a routerLink="/productos">Productos</a></li>
+          <li><a routerLink="/ofertas">Ofertas</a></li>
+          <li><a routerLink="/tienda">Tienda</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-4">
+        <h6>Contacto</h6>
+        <p class="small mb-0">hola&#64;aromaandino.pe<br>Lunes a domingo, 7:00 a.m. – 9:00 p.m.</p>
+      </div>
+    </div>
+    <hr class="border-secondary">
+    <p class="text-center small mb-0">© {{ hoy | date: 'yyyy' }} {{ marca }} · PC2 JavaScript Avanzado · UTP</p>
+  </div>
+</footer>

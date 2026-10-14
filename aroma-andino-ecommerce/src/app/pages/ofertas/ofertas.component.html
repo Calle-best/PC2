@@ -1,0 +1,24 @@
+<section class="container py-4">
+  <h2 class="mb-1">Ofertas de la semana</h2>
+  <p class="text-muted">{{ descuento * 100 }}% de descuento en productos seleccionados.</p>
+
+  <div *ngIf="error" class="alert alert-danger">
+    No se pudo conectar con JSON Server. Ejecuta <code>npm run api</code>.
+  </div>
+
+  <div class="row g-4">
+    <div class="col-12 col-md-6 col-lg-4" *ngFor="let p of ofertas">
+      <div class="card h-100 shadow-sm position-relative">
+        <span class="badge bg-danger position-absolute top-0 end-0 m-2">-{{ descuento * 100 }}%</span>
+        <img [src]="p.imagen" [alt]="p.nombre" class="card-img-top oferta-img" />
+        <div class="card-body">
+          <h5 class="card-title">{{ p.nombre }}</h5>
+          <p class="mb-0">
+            <del class="text-muted me-2">{{ p.precio | currency: 'PEN':'S/ ':'1.2-2' }}</del>
+            <span class="h5 text-terracotta">{{ precioOferta(p) | currency: 'PEN':'S/ ':'1.2-2' }}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

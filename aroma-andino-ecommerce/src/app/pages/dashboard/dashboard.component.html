@@ -1,0 +1,54 @@
+<section class="container py-4">
+  <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+    <div>
+      <h2 class="mb-0">¡Bienvenido, {{ usuario?.nombre }}!</h2>
+      <small class="text-muted">
+        Sesión iniciada: {{ usuario?.fechaIngreso | date: 'dd/MM/yyyy HH:mm' }}
+      </small>
+    </div>
+    <button class="btn btn-outline-dark" (click)="cerrarSesion()">
+      <i class="bi bi-box-arrow-right"></i> Cerrar sesión
+    </button>
+  </div>
+
+  <div class="row g-3 my-3">
+    <div class="col-6 col-lg-3">
+      <div class="card text-center shadow-sm"><div class="card-body">
+        <div class="display-6 text-terracotta">{{ totalProductos }}</div><small>Productos</small>
+      </div></div>
+    </div>
+    <div class="col-6 col-lg-3">
+      <div class="card text-center shadow-sm"><div class="card-body">
+        <div class="display-6 text-terracotta">{{ totalOfertas }}</div><small>En oferta</small>
+      </div></div>
+    </div>
+    <div class="col-6 col-lg-3">
+      <div class="card text-center shadow-sm"><div class="card-body">
+        <div class="display-6 text-danger">{{ stockBajo.length }}</div><small>Stock bajo</small>
+      </div></div>
+    </div>
+    <div class="col-6 col-lg-3">
+      <div class="card text-center shadow-sm"><div class="card-body">
+        <div class="h4 text-terracotta mt-2">{{ valorInventario | currency: 'PEN':'S/ ':'1.0-0' }}</div><small>Valor inventario</small>
+      </div></div>
+    </div>
+  </div>
+
+  <div class="card shadow-sm">
+    <div class="card-header">Inventario — alertas de stock bajo</div>
+    <div class="table-responsive">
+      <table class="table table-hover mb-0">
+        <thead><tr><th>Producto</th><th>Categoría</th><th>Stock</th><th>Precio</th></tr></thead>
+        <tbody>
+          <tr *ngFor="let p of stockBajo">
+            <td>{{ p.nombre }}</td>
+            <td>{{ p.categoria }}</td>
+            <td class="text-danger fw-bold">{{ p.stock }}</td>
+            <td>{{ p.precio | currency: 'PEN':'S/ ':'1.2-2' }}</td>
+          </tr>
+          <tr *ngIf="stockBajo.length === 0"><td colspan="4" class="text-center text-muted">Sin alertas.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
